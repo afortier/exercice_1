@@ -109,33 +109,5 @@ ex_1_9(var prenomLongueur) {
   print('Les prénoms avec leur longueur: ${prenomLongueur}');
 }
 
-List fromTextToWords(String text) {
-  RegExp regexp = const RegExp("[,;:.?!()'`'/ \n]");
-  var textWithout = text.replaceAll(regexp,'');
-  return textWithout.split('  ');
-}
-
-Map analyseWordFrequency(List wordList) {
-  var wordFrequencyMap = new Map();
-  for (var w in wordList) {
-    var word = w.trim();
-    if (word != '') {
-      if (!wordFrequencyMap.containsKey(word)) {
-        wordFrequencyMap[word] = 0;
-      }
-      wordFrequencyMap[word] = wordFrequencyMap[word] +1;
-    }
-  }
-  return wordFrequencyMap;
-}
-
-List sortWords (Map wordFrequencyMap) {
-  var wordWordFrequencyMap = new Map<String, String>();
-  wordFrequencyMap.forEach((k, v) =>
-      wordWordFrequencyMap[k] = '${k}: ${v.toString()}');
-  List sortedWordList = wordWordFrequencyMap.values;
-  sortedWordList.sort((m, n) => m.compareTo(n));
-  return sortedWordList;
-}
-
-
+String ph = 'Le chien mange du pain';
+List mot = ph.split(' ') ;

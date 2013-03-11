@@ -46,13 +46,7 @@ exercice_1_6() {
 }
 
 exercice_1_7() {
-  var prenoms = new Set();
-  prenoms.add('Jean');
-  prenoms.add('Maximilien');
-  prenoms.add('Brigitte');
-  prenoms.add('Sonia');
-  prenoms.add('Jean-Pierre');
-  prenoms.add('Sandra');
+  var prenoms = ['Jean', 'Maximilien', 'Brigitte', 'Sonia', 'Jean-Pierre', 'Sandra'];
   ex_1_7(prenoms);
 }
 
@@ -70,6 +64,10 @@ exercice_1_9() {
   prenomLongueur['Jean-Pierre'] = 11;
   prenomLongueur['Sandra'] = 6;
   ex_1_9(prenomLongueur);
+}
+
+exercice_1_10() {
+  
 }
 
 
@@ -100,5 +98,8 @@ void main() {
  print('');
  print ("Exercice 9");
  exercice_1_9();
+ print('');
+ print ("Exercice 10");
+ exercice_1_10();
 }
 
