@@ -7,9 +7,8 @@ num interet(num a, var b, num c) {
 num table(num x, num y){
   return x * y;
 } 
-
-ex_1_4(){
-  var a = 4;
+  
+ex_1_4(var a){
   var degres = a *(180/PI);
   var degresD = degres.toInt();
   var decDegres1 = degres - (degres.floor());
@@ -80,8 +79,8 @@ ex_1_6(var mot) {
 ex_1_7(var prenoms) {
   var countunder6 = prenoms.where((p) => p.length < 6);
   var countover6 = prenoms.where((p) => p.length >= 6);
-  print('Mots ayant moins de 6 lettre: ${countunder6}');
-  print('Mots ayant 6 lettres ou plus: ${countover6}');
+  print('Mots ayant moins de 6 lettre: ${countunder6.toList()}');
+  print('Mots ayant 6 lettres ou plus: ${countover6.toList()}');
 }
 
 ex_1_8(var n) {
@@ -105,9 +104,21 @@ ex_1_8(var n) {
   }
 }
 
-ex_1_9(var prenomLongueur) {
-  print('Les prénoms avec leur longueur: ${prenomLongueur}');
+String abc = 'Jean-Michel Marc Vanessa Anne Maximilien Alexandre-Benoit Louise';
+List lettre = abc.split(' ');
+int getlengt;
+print ('${getlength}');
+
+ex_1_10(String ph) {
+  List mot = ph.split(' ');
+  int get length {
+    int count = 0;
+    Iterator it = iterator;
+   while (it.moveNext()){
+     count++;
+   }
+   return count
+  }
+  
 }
 
-String ph = 'Le chien mange du pain';
-List mot = ph.split(' ') ;

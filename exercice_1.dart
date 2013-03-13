@@ -31,8 +31,8 @@ exercice_1_3() {
 }
 
 exercice_1_4() {
-  var a = 4; // prenons, par exemple, une valeur de 4 radians
-  ex_1_4();
+  var a = 2; // prenons, par exemple, une valeur de 2 radians
+  ex_1_4(a);
 }
 
 exercice_1_5() {
@@ -56,18 +56,11 @@ exercice_1_8() {
 }
 
 exercice_1_9() {
-  var prenomLongueur = {};
-  prenomLongueur['Jean'] = 4;
-  prenomLongueur['Maximilien'] = 10;
-  prenomLongueur['Brigitte'] = 8;
-  prenomLongueur['Sonia'] = 5;
-  prenomLongueur['Jean-Pierre'] = 11;
-  prenomLongueur['Sandra'] = 6;
-  ex_1_9(prenomLongueur);
+  ex_1_9(abc);
 }
 
 exercice_1_10() {
-  
+  String ph = 'Le chien mange du pain';
 }
 
 
