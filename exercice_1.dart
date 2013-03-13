@@ -56,11 +56,13 @@ exercice_1_8() {
 }
 
 exercice_1_9() {
-  ex_1_9(abc);
+  List prenoms= ['Jean-Michel','Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoit', 'Louise' ];
+  ex_1_9(prenoms);
 }
 
 exercice_1_10() {
-  String ph = 'Le chien mange du pain';
+  var ph = 'Le chien mange du pain';
+  ex_1_10(ph);
 }
 
 

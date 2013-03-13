@@ -104,21 +104,12 @@ ex_1_8(var n) {
   }
 }
 
-String abc = 'Jean-Michel Marc Vanessa Anne Maximilien Alexandre-Benoit Louise';
-List lettre = abc.split(' ');
-int getlengt;
-print ('${getlength}');
-
-ex_1_10(String ph) {
-  List mot = ph.split(' ');
-  int get length {
-    int count = 0;
-    Iterator it = iterator;
-   while (it.moveNext()){
-     count++;
-   }
-   return count
+ex_1_9 (List prenoms) {
+  for(int i = 0; i <= prenoms.length-1; i++){
+    print('Le prenom ${prenoms[i]} a une longueur de ${prenoms[i].length} caractères.');
   }
-  
 }
 
+ex_1_10(var ph) {
+    print('Il y a ${ph.split(" ").length} mots dans la phrase:\n"${ph}"');
+}
